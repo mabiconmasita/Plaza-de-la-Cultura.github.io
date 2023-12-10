@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plaza de la Cultura - Santo Domingo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+                /* Otros estilos... */
+                background: #fff; /* Cambia estos colores según tus preferencias */
+           
+            
+            
+        }
+
+        header {
+            background-color: linear-gradient(to bottom, #3498db, #e74c3c);
+            color: #000 ;
+            text-align: center;
+            padding: 1em;
+            width: 100%;
+            margin-bottom: 20px;
+            margin-top: 20px; /* Agrega margen superior */
+        
+        }
+
+        header h1 {
+            margin: 0;
+            
+        
+        }
+
+        header h2 {
+            margin: 5px 0 0;
+            font-size: 0.8em;
+            text-align: center;
+            color: #17202A;
+        }
+        nav {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 0.5em;
+            width: 100%;
+            position: relative;
+            background-color: transparent;
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(to bottom, #3498db , #4A235A  ); /* Cambia estos colores según tus preferencias */
+        }
+        nav::before,
+        nav::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 1px;
+            background-color: #ddd;
+            width: calc(60% - 30px);
+            margin: -4px 0; /* Ajusta el margen superior e inferior */
+        }
+
+        nav::before {
+            top: 0;
+        }
+
+        nav::after {
+            bottom: 0;
+        }
+        nav a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 40px; /* Ajusta el margen derecho e izquierdo */
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        nav a:hover, nav a.active {
+            color: #fff;
+        }
+
+        section {
+            padding: 5px;
+            width: 80%;
+            max-width: 1000px;
+            margin: 30px 0 20px; /* Separación superior e inferior del contenedor principal */
+            text-align: left; /* Alineación del texto a la izquierda */
+            margin-left: 10px; /* Margen izquierdo */
+        }
+
+        #inicio {
+            display: block;
+        }
+
+        #inicio img,
+        #cinemateca img,
+        #historia img,
+        #artes img,
+        #contacto img,
+        #nosotros img {
+            display: block;
+            margin: 0 auto 30px; /* Separación inferior de la imagen */
+            max-width: 100%;
+            height: auto;
+            
+            /* Ajusta la siguiente línea para mover la imagen a la izquierda */
+            /* margin-left: 20px; */
+        }
+
+        #nosotros img {
+            margin-bottom: 20px;
+            
+        }
+        h2 {
+            margin-top: 0; /* Elimina el espacio superior predeterminado para los encabezados */
+            /* Ajusta la siguiente línea para mover el título a la izquierda */
+            text-align: left;
+            color: #000 ; /* Color de los demás títulos */
+            font-size: 1.2em; /* Tamaño de letra más pequeño */
+            margin: 0 auto 20px;
+        }
+
+        h2#centro {
+            text-align: center;
+            color: #000; /* Color del título "Museos Plaza de la Cultura" */
+            font-weight: bold; /* Negrita */
+            font-size: 1.5em; /* Tamaño de letra mayor */
+        }
+
+        #inicio p {
+            text-align: justify; /* Alineación del texto justificado */
+            /* Ajusta la siguiente línea para mover el texto a la izquierda */
+            /* margin-left: 20px; */
+            margin: 0px auto 40px; /* Ajusta el margen inferior del párrafo */
+        }
+         /* Agrega margen inferior a las imágenes en la sección "Nosotros" */
+         #contenido img.nosotros-img {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Plaza de la Cultura</h1>
+        <h2>SANTO DOMINGO</h2>
+    </header>
+
+    <nav>
+        <a href="#" onclick="mostrarContenido('inicio')" class="active">Inicio</a>
+        <a href="#" onclick="mostrarContenido('cinemateca')">Cinemateca R.D</a>
+        <a href="#" onclick="mostrarContenido('historia')">Museo Nacional de Historia Natural</a>
+        <a href="#" onclick="mostrarContenido('artes')">Museo de Arte Moderno</a>
+        <a href="#" onclick="mostrarContenido('nosotros')">Nosotros</a>
+    </nav>
+
+    <section id="inicio">
+        <h2 id="centro">Museos Plaza de la Cultura</h2>
+        <img src="https://s3-eu-west-1.amazonaws.com/s3objetos/megacms/zona-colonial/imgblog/plaza-de-la-cultura-museos.jpg" alt="Imagen de Museos Plaza de la Cultura">
+        <p><b>Los Museos Plaza de la Cultura</b> son un <b>conjunto de varios museos</b> situados en el centro de Santo Domingo, muy cerca de la <b>Zona Colonial.</b>
+        El complejo, llamado Plaza de la Cultura, incluye el Museo de Arte Moderno, el Museo del Hombre Dominicano, Museo de Historia Natural y Geografía, el Teatro Nacional Eduardo Brito, la Cinemateca Dominicana y la Biblioteca Nacional. </p>
+        
+        <h2>Museo de Arte Moderno de Santo Domingo.</h2>
+        <p>Desde 1976 el <b>Museo de Arte Moderno de Santo Domingo</b> (MAM) <b>es el museo más antiguo y más grande de la República Dominicana</b>. Una institución dedicada a la <b>difusión y conservación del arte moderno y contemporáneo</b>. El museo fue fundado por un grupo de artistas e intelectuales dirigidos por el pintor Carlos Pellerano.
+        El MAM alberga una colección de <b>más de 2.000 obras de arte moderno</b>, entre las que podemos encontrar pinturas, esculturas, dibujos, grabados y fotografías, que conforman su exposición permanente.
+        Distribuidas en cuatro niveles, el MAM cuenta con varias salas, en las que se muestran más de mil <b>obras de arte dominicano, caribeño e iberoamericano.</b> 
+
+        <h2>Museo del Hombre Dominicano.</h2>
+        <p><b>El Museo del Hombre Dominicano</b> (MUDOM) abrió sus puertas en 1973. Un <b>museo antropológico </b>cuyo objetivo es educar a los visitantes sobre la <b>historia, la cultura y las costumbres del pueblo dominicano.</b>
+        El MUDOM está dividido en cuatro secciones principales: <b>Precolombina, Colonial, Republicana y Contemporánea</b>. El museo también tiene una sección dedicada a la diáspora dominicana.
+        El MUDOM está abierto de martes a domingo de 9:00 a 16:30 horas.
+        La entrada es gratuita para los niños menores de 12 años, y reducida para estudiantes y personas mayores.<p>
+
+        <h2>Museo de Historia Natural  y Geografía.</h2>
+        <p>Son los últimos museos que se incorporaron a la Plaza de la Cultura, en 1982. <b>Su misión es  preservar y difundir el patrimonio natural y cultural de la República Dominicana.</b>
+        El Museo de Historia Natural cuenta con <b>exposiciones permanentes y temporales sobre la fauna, la flora y el paisaje dominicanos</b>. El Museo de Historia y Geografía, por su parte, está dedicado a la historia de Santo Domingo y de la República Dominicana.</p>
+     
+        <h2>Teatro Nacional Eduardo Brito.</h2>
+        <p>Desde 1973 las artes escénicas cuentan con <b>un escenario de talla mundial</b> en el <b>Teatro Nacional</b> Dominicano. Es sin duda el escenario más importante de República Dominicana y desde su fundación <b>han pasado por él impresionantes obras de teatro, ballet, ópera y musicales de todos los géneros</b>.
+        La acústica </b>de este teatro ha sido diseñada <b>siguiendo el ejemplo</b> de los grandes <b>escenarios de talla mundial</b> para conseguir una acústica perfecta y al mismo tiempo permitir el montaje de espectáculos de gran nivel.
+        En los vestíbulos del teatro <b>podemos encontrar esculturas de grandes personajes</b> de la música dominicana como la del barítono Eduardo Brito y la del incuestionable compositor alemán Beethoven. También observamos detalles ricos en mármol y madera de caoba, que muestran un bellísimo contraste con su alfombra roja.</p>
+
+        <h2>Cinemateca Dominicana.</h2>
+        <p>En 1979 vio la luz la <b>Cinemateca Dominicana</b> para el disfrute de <b>los amantes del séptimo arte</b>.
+        La Cinemateca es la institución encargada de <b>conservar y promover las obras de cine más valiosas del cine dominicano</b>, tanto en sus obras clásicas como modernas. Posee un importantísimo archivo que cuenta con más de <b>15.000 piezas audiovisuales</b>.
+        En la Cinemateca se presentan con cierta regularidad <b>exposiciones, programas, ciclos de cine y algunas proyecciones</b> de películas de todos los géneros, seleccionando algunas obras del propio archivo de la Cinemateca y en algunas ocasiones de muestras de cine internacional que visitan Santo Domingo.
+        Todos los eventos son gratuitos. Un verdadero placer para los amantes del cine en República Dominicana.</p>
+
+        <h2>Biblioteca Nacional Pedro Henríquez Ureña.</h2>
+        <p>En 1971 las letras dominicanas y universales tuvieron su lugar en Santo Domingo, con la creación de la <b>Biblioteca Nacional Dominicana</b>.
+        <b>Las raíces</b> de esta biblioteca nos llevarán <b>hasta la época colonial</b>, a pesar de ser una biblioteca más bien joven, gracias a la conexión con la biblioteca que fundara Gonzalo Fernández de Oviedo, alcalde de la Fortaleza de Santo Domingo y también primer cronista de Indias en el siglo XVI.
+        La colección de esta biblioteca <b>supera hoy los 170.000 ejemplares</b> entre <b>libros y documentos</b>, entre los que se encuentran muchos de <b>autores dominicanos</b> y <b>también de los grandes clásicos de la literatura universal</b>.
+        Los Museos Plaza de la Cultura son un lugar ideal para conocer la historia y la cultura de la República Dominicana. Los museos ofrecen una variedad de exposiciones y programas que seguramente interesarán a los visitantes de todas las edades.
+        Los Museos Plaza de la Cultura están abiertos de martes a domingo de 9:00 a 17:00 horas. La entrada es gratuita para los niños menores de 12 años, y reducida para estudiantes y personas mayores.</p>
+      
+        <!-- Resto del contenido -->
+    </section>
+
+    <section id="cinemateca">
+              <img src="https://i.imgur.com/joOS3kr.png" alt="Imagen de Cinemateca R.D" style="display: block; margin: 0 auto;">
+    </section>
+
+    <section id="historia">
+        <img src="https://i.imgur.com/Mqv5bQD.png" alt="Imagen de Museo Nacional de Historia Natural" style="display: block; margin: 0 auto;">
+    </section>
+
+    <section id="artes">
+        <img src="https://i.imgur.com/51CX3rY.png" alt="Imagen de Museo Nacional de Historia Natural" style="display: block; margin: 0 auto;">
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Contenido de la página de Contacto a tu preferencia.</p>
+    </section>
+
+    <section id="nosotros">
+                <div class="nosotros-img">
+            <img src="https://i.imgur.com/ditplYa.png" alt="Imagen de Nosotros">
+        </div>
+        <div class="nosotros-img">
+            <img src="https://i.imgur.com/OQNsWSx.png" alt="Imagen de Nosotros">
+        </div>
+        <!-- ... (Más contenido) ... -->
+    </div></section>
+
+    <script>
+        function mostrarContenido(seccion) {
+            // Ocultar todas las secciones
+            document.getElementById('inicio').style.display = 'none';
+            document.getElementById('cinemateca').style.display = 'none';
+            document.getElementById('historia').style.display = 'none';
+            document.getElementById('artes').style.display = 'none';
+            document.getElementById('contacto').style.display = 'none';
+            document.getElementById('nosotros').style.display = 'none';
+
+            // Mostrar la sección seleccionada
+            document.getElementById(seccion).style.display = 'block';
+
+            // Marcar la pestaña activa
+            document.querySelectorAll('nav a').forEach(function (enlace) {
+                enlace.classList.remove('active');
+            });
+
+            document.querySelector(`nav a[href="#"][onclick="mostrarContenido('${seccion}')"]`).classList.add('active');
+        }
+
+        // Mostrar la página de inicio al cargar la página
+        window.onload = function() {
+            mostrarContenido('inicio');
+        };
+    </script>
+
+</body>
+</html>
